@@ -38,6 +38,12 @@
 // app.MapGet("/", ()=> "hELLO, wORLD");
 
 // app.Run();
+
+
+// //Program.cs
+// //Program.cs
+// //Program.cs
+
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using Backend.Data;
@@ -50,10 +56,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Configure CORS policy
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowSpecificOrigin",
-        builder => builder.WithOrigins("https://azureinfoempleados-ghb2ctbbhfb6escc.eastus-01.azurewebsites.net")
-                          .AllowAnyMethod()
-                          .AllowAnyHeader());
+    options.AddPolicy("AllowAll",
+        builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 });
 
 // Configure DbContext with MySQL
@@ -75,7 +79,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseCors("AllowSpecificOrigin"); // Use the correct CORS policy name
+app.UseCors("AllowAll");
 
 app.UseHttpsRedirection();
 app.UseStaticFiles(); // This will serve files from wwwroot by default
