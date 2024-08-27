@@ -132,3 +132,5 @@ C:\Users\wasab\Backend\bin\Debug\net8.0\client\package.json
 C:\Users\wasab\Backend\bin\Debug\net8.0\client\public\manifest.json
 C:\Users\wasab\Backend\bin\Debug\net8.0\MySqlConnector.dll
 C:\Users\wasab\Backend\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\wasab\Backend\bin\Debug\net8.0\Backend.staticwebassets.runtime.json
+C:\Users\wasab\Backend\obj\Debug\net8.0\Backend.sourcelink.json
