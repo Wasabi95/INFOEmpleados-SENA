@@ -38,8 +38,6 @@
 // app.MapGet("/", ()=> "hELLO, wORLD");
 
 // app.Run();
-
-
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using Backend.Data;
